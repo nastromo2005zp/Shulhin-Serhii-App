@@ -1,8 +1,16 @@
 import React from 'react';
 import RequestBoredServer from "./RequestBoredServer";
 
-const SectionTwo = () => {
+
+const SectionTwo = (props) => {
+
+
+
+
     return (
+
+
+
         <section className="secondSection">
 
             <div className="container" id="activitySelector">
@@ -37,7 +45,7 @@ const SectionTwo = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 logoSquare">
-                        <img src={require('../images/logo_square_40_40.png')} alt="logo-square"/>
+                        <img src={require("../images/logo_square_40_40.png")} alt="logo-square"/>
 
 
                     </div>
@@ -48,6 +56,8 @@ const SectionTwo = () => {
 
 
         </section>
+
+
     );
 };
 

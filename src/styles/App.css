@@ -94,7 +94,81 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+/*  Slider styles */
+.sliderHead {
+    color: #FB5607;
+}
+/* section four styles */
+.fourthSectionHeader {
+    color: #FB5607;
+    margin-top: 40px;
+}
+.achievements .achievements__item {
+    height: 12vw;
+    font-size: 28px;
+    margin: 20px;
+    background-size: contain;
+    opacity: 85%;
+    color: #fff;
+}
+.achievements div {
+    width: 12vw;
+    position: relative;
+}
+.achieveTitle {
+    position: relative;
+    margin: 20px 0;
+}
+.achievements__item p, .achieveTitle p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+
+.achievements__item_one {
+    background: no-repeat url("../images/achieve01.png") center;
+
+}
+
+.achievements__item_one p {
+    color: #000;
+}
+
+.achievements__item_two {
+    background: no-repeat url("../images/achieve02.png") center;
+
+}
+.achievements__item_third {
+    background: no-repeat url("../images/achieve03.png") center;
+
+}
+.achievements__item_four {
+    background: no-repeat url("../images/achieve04.png") center;
+
+}
+.achievements__item_five {
+    background: no-repeat url("../images/achieve05.png") center;
+
+}
+/* section five styles */
+.fiveSection {
+    padding: 40px 0;
+    background-color: rgba(58, 134, 255, .62);
+    color: #fff;
+}
+.eventTable div {
+    border: 2px #fff;
+    border-style: groove;
+}
+.eventTable {
+    text-align: center;
+}
+.headerTable {
+    text-align: left;
+}
 
 
 /* media queries */
