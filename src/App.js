@@ -8,10 +8,12 @@ import SectionTwo from "./components/SectionTwo";
 import SectionThree from "./components/SectionThree";
 import SectionFour from "./components/SectionFour";
 import SectionFive from "./components/SectionFive";
+import {getActivityInfo} from "./state";
+import {activityObj} from "./state";
 
 
-
-function App (){
+function App (props){
+    //debugger;
 
 
 
@@ -19,8 +21,8 @@ function App (){
   return (
     <div className="App">
         <SectionOne />
-        <SectionTwo />
-        <SectionThree />
+        <SectionTwo getActivityInfo={props.getActivityInfo}/>
+        <SectionThree activityObj={props.activityObj}/>
         <SectionFour />
         <SectionFive />
 
