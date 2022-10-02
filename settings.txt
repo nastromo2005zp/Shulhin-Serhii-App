@@ -1,0 +1,17 @@
+To start a project:
+
+server => load server.js
+server will start on localhost:8000
+
+db query create:
+CREATE TABLE `ideas4me`.`activities` (
+ `activity_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+ `activity_title` VARCHAR(255) NOT NULL,
+`category_title` VARCHAR(255) NOT NULL,
+ `time_when_comlpeted` VARCHAR(255) NOT NULL,
+PRIMARY KEY (`activity_id`),
+UNIQUE INDEX `activity_id_UNIQUE` (`activity_id` ASC));
+
+react app start:
+npm start (index.js)
+
