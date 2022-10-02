@@ -33,16 +33,14 @@ module.exports = function (app) {
 
         connection.query("SELECT * FROM ideas4me.activities;",
             function(err, results, fields) {
-               // console.log(err);
-              // console.log(results);
-                // console.log(fields);
+               
                 
                 return res.json(results);
             });
 
 
 
-    })
+    });
 
 
     app.get('/addnewitem', (req, res) => {
@@ -72,7 +70,21 @@ module.exports = function (app) {
 
 
 
-    })
+    });
+
+    app.get('/cleartable', (req, res) => {
+
+
+        connection.query("DELETE FROM ideas4me.activities;",
+            function(err, results) {
+               
+                
+                return res.json(results);
+            });
+
+
+
+    });
 
 
 

@@ -15,3 +15,11 @@ UNIQUE INDEX `activity_id_UNIQUE` (`activity_id` ASC));
 react app start:
 npm start (index.js)
 
+
+Start Application
+
+So,you have 4 options of activities to select. 
+
+Click on any and she will adds to your list(slider)
+
+Click on slide to complete activity, she will adds to database and will remove from a slider.

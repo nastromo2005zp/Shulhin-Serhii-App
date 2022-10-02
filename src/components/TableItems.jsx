@@ -39,9 +39,12 @@ const TableItems = (props) => {
             delta = Math.round(deltaTime/2629744)+' months ago';
 
         }
-        else  {
+        else  if (deltaTime > 31556926 && deltaTime <= 631138520)
+        {
             delta = Math.round(deltaTime/31556926)+' years ago';
-
+        }
+        else if (deltaTime > 631138520) {
+            delta = "";
         }
         item.time_when_completed = delta;
     })

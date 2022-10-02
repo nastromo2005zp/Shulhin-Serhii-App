@@ -20,6 +20,7 @@ const SectionFourFiveParent = () => {
         ]);
 
 
+    useEffect(() => {
 
 
         fetch("http://localhost:8000/getactivities")
@@ -34,7 +35,35 @@ const SectionFourFiveParent = () => {
                 (error) => {
 
                 }
-            );
+            )
+    }, []);
+
+
+    const clearAll = () => {
+        fetch("http://localhost:8000/cleartable")
+            .then(res => res.json())
+            .then(
+                (res) => {
+                    //console.log(res);
+                    setData([
+                        {
+                            activity_id : "",
+                            activity_title : "",
+                            category_title : "",
+                            time_when_completed : "",
+                        }
+                    ]);
+
+
+                },
+                (error) => {
+
+                }
+            )
+    }
+
+
+
 
 
 
@@ -45,6 +74,12 @@ const SectionFourFiveParent = () => {
         <div>
             <SectionFour data={data}/>
             <SectionFive data={data}/>
+            <div className="clearRow">
+
+                <button onClick={clearAll}>CLEAR</button>
+
+            </div>
+
         </div>
     );
 };

@@ -175,6 +175,19 @@ h1 {
 }
 
 
+.clearRow {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding-bottom: 40px;
+}
+.clearRow button {
+    background-color: #fff;
+    color: rgba(58, 134, 255, 1);
+    border: 2px solid rgba(58, 134, 255, 1);
+    width: 200px;
+}
+
 /* media queries */
 @media screen and (min-width: 576px) {
 
