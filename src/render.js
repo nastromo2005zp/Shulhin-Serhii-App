@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 // export let rerenderEntireTree = (getActivityInfo, activityObj) => {
 //     const root = ReactDOM.createRoot(document.getElementById('root'));
 //     root.render(

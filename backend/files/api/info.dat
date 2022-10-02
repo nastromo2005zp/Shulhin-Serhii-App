@@ -1,0 +1,21 @@
+Creates a new Buffer containing the given JavaScript string str. If provided, the encoding parameter identifies the strings character encoding.
+
+const buf1 = new Buffer('this is a tést');
+console.log(buf1.toString());
+  // prints: this is a tést
+console.log(buf1.toString('ascii'));
+  // prints: this is a tC)st
+
+const buf2 = new Buffer('7468697320697320612074c3a97374', 'hex');
+console.log(buf2.toString());
+  // prints: this is a tést
+Class Method: Buffer.alloc(size[, fill[, encoding]])#
+Added in: v4.5.0
+size <Number>
+fill <Value> Default: undefined
+encoding <String> Default: utf8
+Allocates a new Buffer of size bytes. If fill is undefined, the Buffer will be zero-filled.
+
+const buf = Buffer.alloc(5);
+console.log(buf);
+  // <Buffer 00 00 00 00 00>

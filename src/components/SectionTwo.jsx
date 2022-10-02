@@ -1,11 +1,11 @@
 import React from 'react';
 import RequestBoredServer from "./RequestBoredServer";
-import {getActivityInfo} from "../index";
+
 
 
 const SectionTwo = (props) => {
-    //let activeElement = React.createRef();
-    let getActivityInfo = props.getActivityInfo;
+
+
 
 
 
@@ -18,24 +18,24 @@ const SectionTwo = (props) => {
             <div className="container" id="activitySelector">
                 <div className="row">
                     <div className="col-6 col-sm-6 d-flex justify-content-center">
-                            <div className="menu menu__menuItem menu__menuItem_first" onClick={getActivityInfo}>
+                            <div className="menu menu__menuItem menu__menuItem_first"  onClick={(e) => props.getNewActivityItem(e)}>
                                 <RequestBoredServer />
                             </div>
                     </div>
                     <div className="col-6 col-sm-6 d-flex justify-content-center">
-                                <div className="menu menu__menuItem menu__menuItem_second" onClick={getActivityInfo}>
+                                <div className="menu menu__menuItem menu__menuItem_second"  onClick={(e) => props.getNewActivityItem(e)}>
                                     <RequestBoredServer />
                                 </div>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-6 col-sm-6 d-flex justify-content-center">
-                        <div className="menu menu__menuItem menu__menuItem_third" onClick={getActivityInfo}>
+                        <div className="menu menu__menuItem menu__menuItem_third"  onClick={(e) => props.getNewActivityItem(e)}>
                             <RequestBoredServer />
                         </div>
                     </div>
                     <div className="col-6 col-sm-6 d-flex justify-content-center">
-                        <div className="menu menu__menuItem menu__menuItem_fourth" onClick={getActivityInfo}>
+                        <div className="menu menu__menuItem menu__menuItem_fourth"  onClick={(e) => props.getNewActivityItem(e)}>
                             <RequestBoredServer />
                         </div>
                     </div>

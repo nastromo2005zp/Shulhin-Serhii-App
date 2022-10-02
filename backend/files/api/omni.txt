@@ -1,0 +1,15 @@
+Class Method: Buffer.isBuffer(obj)#
+obj <Object>
+Returns: <Boolean>
+Returns 'true' if obj is a Buffer.
+
+Class Method: Buffer.isEncoding(encoding)#
+Added in: v0.9.1
+encoding <String> The encoding string to test
+Returns: <Boolean>
+Returns true if the encoding is a valid encoding argument, or false otherwise.
+
+buf[index]#
+The index operator [index] can be used to get and set the octet at position index in the Buffer. The values refer to individual bytes, so the legal value range is between 0x00 and 0xFF (hex) or 0 and 255 (decimal).
+
+Example: copy an ASCII string into a Buffer, one byte at a time:
